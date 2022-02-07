@@ -1,0 +1,24 @@
+{
+  "name": "festival",
+  "version": "1.0.0",
+  "description": "*** ### ***Description*** The festival App allows edm lovers to get together and share upcoing evebnts on thier feed. Users are also able to search Dj's and add them to thier favorites.  ### ***Technologies Used*** * CSS Grid * Event listeners     * Load event     * Click event * React ### ***Getting Started*** ##### We first set up the server for festival posts and comments. Have the back end set up and have post show on the home page. ##### A Trello board was used to keep track of the development progress and can be viewed [here.](https://trello.com/b/FK3A3yi5/festival) ### ***Screenshots*** ##### Electric Festival",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chriszc97/Festival.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chriszc97/Festival/issues"
+  },
+  "homepage": "https://github.com/chriszc97/Festival#readme",
+  "dependencies": {
+    "pg": "^8.7.3",
+    "sequelize": "^6.15.1"
+  }
+}
