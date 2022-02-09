@@ -31,7 +31,8 @@ module.exports = (sequelize, DataTypes) => {
         //   model: 'users',
         //   key: 'id'
         // }
-      }
+      },
+      UserId: DataTypes.STRING
     },
     {
       sequelize,
