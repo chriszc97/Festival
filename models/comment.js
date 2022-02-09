@@ -10,7 +10,7 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       // define association here
       Comment.belongsTo(models.Post, { foreignKey: 'postId' });
-      Comment.belonfsTo(models.Post, { foreignKey: 'postId' });
+      Comment.belongsTo(models.User, { foreignKey: 'userId' });
     }
   }
   Comment.init(
@@ -18,19 +18,19 @@ module.exports = (sequelize, DataTypes) => {
       body: DataTypes.STRING,
       postId: {
         type: DataTypes.INTEGER,
-        onDelete: 'CASCADE',
-        references: {
-          model: 'posts',
-          key: 'id'
-        }
+        onDelete: 'CASCADE'
+        // references: {
+        //   model: 'posts',
+        //   key: 'id'
+        // }
       },
-      UserId: {
+      userId: {
         type: DataTypes.INTEGER,
-        onDelete: 'CASCADE',
-        references: {
-          model: 'users',
-          key: 'id'
-        }
+        onDelete: 'CASCADE'
+        // references: {
+        //   model: 'users',
+        //   key: 'id'
+        // }
       }
     },
     {

@@ -1,16 +1,16 @@
 const { User, Post } = require('../models');
 
-// const createUser = async (req, res) => {
-//   try {
-//     let body = {
-//       ...req.body
-//     };
-//     let result = await User.create(body);
-//     res.send(result);
-//   } catch (error) {
-//     throw error;
-//   }
-// };
+const createUser = async (req, res) => {
+  try {
+    let body = {
+      ...req.body
+    };
+    let result = await User.create(body);
+    res.send(result);
+  } catch (error) {
+    throw error;
+  }
+};
 
 const updateUser = async (req, res) => {
   try {
@@ -42,22 +42,23 @@ const deleteUser = async (req, res) => {
 const getUserPost = async (req, res) => {
   try {
     let id = req.params.id;
-    const post = await Post.findAll({
+    const user = await User.findAll({
       order: [['createdAt', 'DESC']],
-      where: { userId: id },
+      where: { id: id },
       include: [
         {
-          model: Post
+          model: Post,
+          where: { userId: id }
         }
       ]
     });
-    res.send(post);
+    res.send(user);
   } catch (error) {
     throw error;
   }
 };
 module.exports = {
-  // createUser,
+  createUser,
   updateUser,
   deleteUser,
   getUserPost

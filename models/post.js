@@ -21,11 +21,11 @@ module.exports = (sequelize, DataTypes) => {
       likes: DataTypes.INTEGER,
       userId: {
         type: DataTypes.INTEGER,
-        onDelete: 'CASCADE',
-        references: {
-          model: 'users',
-          key: 'id'
-        }
+        onDelete: 'CASCADE'
+        // references: {
+        //   model: 'users',
+        //   key: 'id'
+        // }
       }
     },
     {

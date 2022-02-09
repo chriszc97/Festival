@@ -1,8 +1,9 @@
 const { Post, Comment } = require('../models');
+const comment = require('../models/comment');
 
 const createPost = async (req, res) => {
   try {
-    let postBody = req.postBody;
+    let postBody = req.body;
     let post = await Post.create(postBody);
     res.send(post);
   } catch (error) {
@@ -36,12 +37,10 @@ const deletePost = async (req, res) => {
 
 const getAllposts = async (req, res) => {
   try {
-    let id = req.params.id;
-    const result = await Comment.findAll({
-      where: { postId: id },
+    const result = await Post.findAll({
       include: [
         {
-          model: Post
+          model: Comment
         }
       ]
     });
