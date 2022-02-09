@@ -1,16 +1,16 @@
 const { User, Post } = require('../models');
 
-const createUser = async (req, res) => {
-  try {
-    let body = {
-      ...req.body
-    };
-    let result = await User.create(body);
-    res.send(result);
-  } catch (error) {
-    throw error;
-  }
-};
+// const createUser = async (req, res) => {
+//   try {
+//     let body = {
+//       ...req.body
+//     };
+//     let result = await User.create(body);
+//     res.send(result);
+//   } catch (error) {
+//     throw error;
+//   }
+// };
 
 const updateUser = async (req, res) => {
   try {
@@ -57,7 +57,7 @@ const getUserPost = async (req, res) => {
   }
 };
 module.exports = {
-  createUser,
+  // createUser,
   updateUser,
   deleteUser,
   getUserPost
