@@ -1,6 +1,7 @@
 <template>
   <div>
     <h1>Home Page</h1>
+    <UploadPost />
     <PostCard :post='post' :key='post.id' v-for='post in posts' />
 
   </div>
@@ -9,16 +10,17 @@
 <script> 
 import axios from 'axios'
 import PostCard from '../components/PostCard.vue'
+import UploadPost from '../components/UploadPost.vue'
 const BASE_URL = 'http://localhost:3001/api'
 
 export default {
   name: 'Home',
   components: {
-    PostCard
+    PostCard,
+    UploadPost
   },
   data:() =>({
     posts:{}
-
   }),
   mounted(){
     this.getPosts()

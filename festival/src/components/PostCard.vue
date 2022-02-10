@@ -24,6 +24,12 @@ h2{
   padding: 0;
   color: rgb(1, 10, 9);
 }
+.post{
+  background-color: aquamarine;
+    max-width: 400px;
+  max-height: 480px;
+
+}
 
 
 img{
