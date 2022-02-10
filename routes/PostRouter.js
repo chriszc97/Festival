@@ -5,20 +5,20 @@ const middleware = require('../middleware');
 Router.get('/', controller.getAllposts);
 Router.post(
   '/',
-  middleware.stripToken,
-  middleware.verifyToken,
+  // middleware.stripToken,
+  // middleware.verifyToken,
   controller.createPost
 );
 Router.put(
   '/:id',
-  middleware.stripToken,
-  middleware.verifyToken,
+  // middleware.stripToken,
+  // middleware.verifyToken,
   controller.updatePost
 );
 Router.delete(
   '/:id',
-  middleware.stripToken,
-  middleware.verifyToken,
+  // middleware.stripToken,
+  // middleware.verifyToken,
   controller.deletePost
 );
 

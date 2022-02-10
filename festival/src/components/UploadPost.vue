@@ -1,7 +1,7 @@
 <template>
   <div>
     <h3> Upload a post </h3>
-    <form>
+    <form @submit="handleSubmit">
       <label>title</label>
       <input 
           type='text'
@@ -35,6 +35,9 @@
 
 
 <script>
+import axios from 'axios'
+const BASE_URL= 'http://localhost:3001/api'
+
 export default{
   name: 'UploadPost',
 
@@ -48,8 +51,15 @@ export default{
   methods:{
       handleChange(e) {
       this.post[e.target.name] = e.target.value;
+  },
+   async handleSubmit() {
+      // e.preventDefault();
+      let post = this.post
+      await axios.post(`${BASE_URL}/post/`, post);
+    }
   }
-  }
+
+
 }
 </script>
 
