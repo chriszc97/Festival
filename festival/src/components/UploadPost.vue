@@ -45,15 +45,18 @@ export default{
     post: {
       title: ' ',
       content: ' ',
-      img: ' '
+      img: ' ',
+      likes: 0,
+      userId: null
     }
   }),
   methods:{
       handleChange(e) {
+
       this.post[e.target.name] = e.target.value;
   },
-   async handleSubmit() {
-      // e.preventDefault();
+  async handleSubmit(e) {
+      e.preventDefault();
       let post = this.post
       await axios.post(`${BASE_URL}/post/`, post);
     }
