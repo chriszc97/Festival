@@ -5,11 +5,15 @@
       <p>{{post.content}} </p>
       <img :src='post.img' alt="" />
       <h4>Likes: {{post.likes}}</h4>
-      <Button>Update</Button>
+      <Button
+      @click="toggle"
+      >Update</Button>
       <Button
       @click="deletePost(post.id)"
       >Delete</Button>
+      <label v-if='update'>
       <UpdatePost :post='post' @handleSubmit='handleSubmit' />
+      </label>
     </div>
   </div>
 </template>
@@ -25,6 +29,9 @@ export default {
   components: {
     UpdatePost
   },
+  data: () =>({
+    update: false
+  }),
   
   methods: {
     deletePost(id){
@@ -33,6 +40,16 @@ export default {
       async handleSubmit(id){
       let post = this.post
       await axios.put(`${BASE_URL}/post/${id}`, post)
+    },
+    toggle(e){
+      e.preventDefault()
+      if(this.update === false){
+        this.update =true
+      }
+      else{
+        this.update = false
+      }
+
     }
     }
   }
