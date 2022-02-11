@@ -52,7 +52,6 @@ export default{
   }),
   methods:{
       handleChange(e) {
-
       this.post[e.target.name] = e.target.value;
   },
   async handleSubmit(e) {
@@ -61,8 +60,6 @@ export default{
       await axios.post(`${BASE_URL}/post/`, post);
     }
   }
-
-
 }
 </script>
 

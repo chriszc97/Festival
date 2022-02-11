@@ -8,19 +8,32 @@
       <Button>Update</Button>
       <Button
       @click="deletePost(post.id)"
-      >Delete</Button>    
+      >Delete</Button>
+      <UpdatePost :post='post' @handleSubmit='handleSubmit' />
     </div>
   </div>
 </template>
 
 <script> 
+import axios from 'axios'
+const BASE_URL= 'http://localhost:3001/api'
+import UpdatePost from './UpdatePost.vue'
+
 export default {
   name: 'PostCard',
   props: ['post'],
+  components: {
+    UpdatePost
+  },
+  
   methods: {
     deletePost(id){
       this.$emit('deletePost', id)
-      }
+      },
+      async handleSubmit(id){
+      let post = this.post
+      await axios.put(`${BASE_URL}/post/${id}`, post)
+    }
     }
   }
 

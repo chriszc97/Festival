@@ -15,10 +15,7 @@ const updatePost = async (req, res) => {
   try {
     let postId = parseInt(req.params.id);
     let updatePost = await Post.update(req.body, {
-      where: {
-        id: postId
-      },
-      returning: true
+      where: { id: postId }
     });
     res.send(updatePost);
   } catch (error) {
