@@ -6,22 +6,23 @@
       <img :src='post.img' alt="" />
       <h4>Likes: {{post.likes}}</h4>
       <Button>Update</Button>
-      <Button>Delete</Button>    
+      <Button
+      @click="deletePost(post.id)"
+      >Delete</Button>    
     </div>
   </div>
 </template>
 
 <script> 
-import axios from 'axios'
 export default {
   name: 'PostCard',
   props: ['post'],
   methods: {
-    async deletePost(){
-    
+    deletePost(id){
+      this.$emit('deletePost', id)
+      }
     }
   }
-}
 
 </script>
 

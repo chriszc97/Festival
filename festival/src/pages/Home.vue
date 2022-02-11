@@ -2,7 +2,7 @@
   <div>
     <h1>Home Page</h1>
     <UploadPost />
-    <PostCard :post='post' :key='post.id' v-for='post in posts' />
+    <PostCard :post='post' :key='post.id' v-for='post in posts' @deletePost="deletePost" />
 
   </div>
 </template>
@@ -30,8 +30,11 @@ export default {
     async getPosts(){
       const result = await axios.get(`${BASE_URL}/post`)
       this.posts = result.data
+    },
+    async deletePost(id){
+      const result = await axios.delete(`${BASE_URL}/post/${id}`)
+      console.log(result)
     }
-
   }
 
 }
