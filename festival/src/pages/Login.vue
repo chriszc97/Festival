@@ -36,7 +36,8 @@ export default {
     user: {
       email: '',
       password: ''
-    }
+    },
+    theUser: {}
   }),
   methods: {
     handleChange(e){
@@ -44,11 +45,17 @@ export default {
     },
     async onSubmit(e){
       e.preventDefault()
-      const res = await axios.post(`${BASE_URL}/auth/login`)
-      this.user = res.data
+      let logger = this.user
+      const res = await axios.post(`${BASE_URL}/auth/login`,logger)
+      this.theUser = res.data
 
       //call a get user by id and have userId in params
       //that way in profile i can get user by id to that param
+
+      // need a way to gett all users and compare the 
+      //name/password to enter in home, add another users obj
+      // to render all users, then have user obj map through each 
+      // obj in users to see with ones match 
 
 
     }
