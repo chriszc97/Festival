@@ -25,6 +25,9 @@ Users will need to register an account and in their profiles they are able to po
 
 
 ### ***Future Updates***
+- [ ] Have a sign up page for users
+- [ ] Create a Dj's page and use a third party API to get Dj's and users could add thoer favorite Dj
+- [ ] Edit the user
 ***
 
 ### ***Credits***
@@ -33,3 +36,4 @@ Users will need to register an account and in their profiles they are able to po
 
 ***
 ### ***Description***
+
