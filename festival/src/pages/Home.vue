@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Nav />
     <h1>First name: {{user[0].firstName}}</h1>
     <h1>Last name: {{user[0].lastName}}</h1>
     <h1>Email: {{user[0].email}}</h1>
@@ -15,12 +16,13 @@ import axios from 'axios'
 import PostCard from '../components/PostCard.vue'
 import UploadPost from '../components/UploadPost.vue'
 const BASE_URL = 'http://localhost:3001/api'
-
+import Nav from '../components/Nav.vue'
 export default {
   name: 'Home',
   components: {
     PostCard,
-    UploadPost
+    UploadPost,
+    Nav
   },
   data:() =>({
     posts:{},
