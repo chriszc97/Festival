@@ -4,7 +4,8 @@
 ##### [Github |](https://github.com/chriszc97) [Linkedin | ](https://www.linkedin.com/in/christopher-zeas-8929691b1/) [ Website |]() [ Facebook]()
 ***
 ### ***Description***
-The festival App allows edm lovers to get together and share upcoing evebnts on thier feed. Users are also able to search Dj's and add them to thier favorites. 
+The festival App allows edm lovers to get together and share upcoing evebnts on thier feed. Users are also able to search Dj's and add them to thier favorites.
+Users will need to register an account and in their profiles they are able to post on thier feed. Not only that but users could edit thier posts and delete it.
 ### ***Technologies Used***
 * CSS Grid
 * Event listeners
