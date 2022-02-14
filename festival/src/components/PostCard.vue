@@ -81,6 +81,8 @@ img{
 }
 .container{
   text-align: center;
+  display: flex;
+  gap: 10px
 }
 
 </style>
