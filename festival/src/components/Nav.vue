@@ -17,6 +17,8 @@ export default{
     font-size:30px;
     justify-content: space-evenly;
     gap: 10px;
+    background-color: rgba(199, 201, 108, 0.822)
+    
 
   }
   .link{
