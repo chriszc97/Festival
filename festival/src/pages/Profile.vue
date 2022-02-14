@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="profile">
   <Nav />
   <h1>Welcome Home {{user[0].firstName}}</h1>
   <HomePost :post='post' :key='post.id' v-for='post in posts'/>  
@@ -46,10 +46,21 @@ export default{
 </script>
 <style scoped>
 
-div{
+/* div{
   justify-content: center;
+  align-content: center; */
+  /* background-image: url('https://i.imgur.com/EthuMHq.jpg');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover; */
+/* } */
+.profile{
+   justify-content: center;
   align-content: center;
-  /* display: grid; */
-  
+  background-image: url('https://i.imgur.com/EthuMHq.jpg');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 </style>
