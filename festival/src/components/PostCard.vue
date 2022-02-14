@@ -36,6 +36,8 @@ export default {
   methods: {
     deletePost(id){
       this.$emit('deletePost', id)
+      this.$router.go() 
+
       },
       async handleSubmit(id){
       let post = this.post
