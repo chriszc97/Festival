@@ -82,8 +82,13 @@ img{
 .container{
   text-align: center;
   display: flex;
-  gap: 10px
+  column-gap: 30px;
+  gap: 20px 20px
 }
+.post{
+  column-gap: 30px;
+}
+
 
 </style>
 
