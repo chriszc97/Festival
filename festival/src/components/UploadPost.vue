@@ -2,7 +2,7 @@
   <div>
     <h3> Upload a Post </h3>
     <form @submit="handleSubmit">
-      <label>title</label>
+      <label>Title</label>
       <input 
           type='text'
           name="title"
@@ -10,7 +10,7 @@
           placeholder="title"
           @input="handleChange"
         />
-        <label>content</label>
+        <label>Content</label>
         <input
           type="text"
           name="content"
@@ -18,8 +18,7 @@
           placeholder="content"
           @input="handleChange"
         />
-
-        <label>add a photo </label>
+        <label>Add a photo </label>
         <input
           type="text"
           name="img"
@@ -58,7 +57,7 @@ export default{
       e.preventDefault();
       let post = this.post
       await axios.post(`${BASE_URL}/post/`, post)
-      this.$router.push(`/home`)
+      this.$router.go()
 
     }
   }
@@ -86,6 +85,10 @@ Button:hover{
 h3{
   font-size: 28px;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+label{
+  font-size: 30px;
+  padding: 20px;
 }
 
 </style>
