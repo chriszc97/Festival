@@ -78,8 +78,6 @@ img{
   max-height: 480px;
 }
 .container{
-  /* text-align: center; */
-  /* display: grid; */
   column-gap: 30px;
   gap: 20px 20px;
   justify-self: center;

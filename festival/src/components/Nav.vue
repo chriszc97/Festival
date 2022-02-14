@@ -17,5 +17,12 @@ export default{
     font-size:30px;
     justify-content: space-evenly;
     gap: 10px;
+
+  }
+  .link{
+    color:rgb(83, 27, 83);
+    border: 1px solid rebeccapurple;
+    text-decoration: none;
+    
   }
 </style>
