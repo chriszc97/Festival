@@ -61,12 +61,11 @@ export default {
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
+}
+h1{
+  text-decoration: bold;
+  color:rgb(158, 28, 175)
+}
 
-}
-::placeholder{
-  color:rgb(69, 202, 171);
-  font-size: 0.8em;
-  text-align: center;
-}
 
 </style>

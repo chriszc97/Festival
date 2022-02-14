@@ -84,8 +84,6 @@ img{
   margin-left: 68vh
 }
 Button{
-  
-  /* font-size: 17px; */
   color:cornflowerblue;
   background-color: rgb(234, 255, 245);
   display: inline-block;
