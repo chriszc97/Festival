@@ -22,13 +22,9 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2e5780;
+  color: #df3dff;
   justify-content: center;
   align-items: center;
-  /* background-image: url('https://i.imgur.com/EthuMHq.jpg');
-  background-position: center bottom;
-background-repeat: no-repeat;
-background-size: cover; */
 
 
 }

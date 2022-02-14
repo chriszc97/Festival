@@ -63,4 +63,8 @@ export default{
   background-size: cover;
 
 }
+h1{
+  background-color:blueviolet;
+  margin: 0px;
+}
 </style>

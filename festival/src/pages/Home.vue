@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class='home'>
     <Nav />
     <h1>First name: {{user[0].firstName}}</h1>
     <h1>Last name: {{user[0].lastName}}</h1>
@@ -56,5 +56,12 @@ export default {
 </script>
 
 <style scoped>
+.home{
+  background-image: url('https://i.imgur.com/UTwZ5RD.jpg');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
 
 </style>
