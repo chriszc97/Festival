@@ -52,7 +52,7 @@ export default {
       let logger = this.user
       const res = await axios.post(`${BASE_URL}/auth/login`,logger)
       this.theUser = res.data
-      this.$router.push(`/profile`)
+      this.$router.push(`/home`)
     }
   }
 
@@ -63,14 +63,15 @@ export default {
 div{
   background-color:aqua;
   margin-bottom: 0;
+  border-bottom: 100px;
 
 }
 label{
   font-size: 30px;
   padding: 20px;
-  
-  
 }
-
+button{
+  font-size: 20px
+}
 
 </style>
