@@ -12,9 +12,9 @@ Users will need to register an account and in their profiles they are able to po
     * Load event
     * Click event
 * Vue
-*Vue-Router
-*Sequelize
-*Express
+* Vue-Router
+* Sequelize
+* Express
 ### ***Getting Started***
 ##### We first set up the server for users, posts and comments. Have the back end set up and have post show on the home page. First we set up our three models in our sequelize database. Create controllers and routes for the models. Full CRUD functionality on the posts model. After we test our controllers and have CRUD we move on to the front end with Vue.
 ##### A Trello board was used to keep track of the development progress and can be viewed [here.](https://trello.com/b/FK3A3yi5/festival)

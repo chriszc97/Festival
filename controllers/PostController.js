@@ -35,6 +35,7 @@ const deletePost = async (req, res) => {
 const getAllposts = async (req, res) => {
   try {
     const result = await Post.findAll({
+      order: [['createdAt', 'DESC']],
       include: [
         {
           model: Comment
