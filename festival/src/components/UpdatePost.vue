@@ -59,3 +59,14 @@ export default{
 
 </script>
 
+<style scoped>
+Button{
+  margin-top: 50px;
+  font-size: 24px;
+  color:cornflowerblue;
+  background-color: rgb(234, 255, 245);
+  display: inline-block;
+  border-radius: 1.4vh;
+}
+</style>
+

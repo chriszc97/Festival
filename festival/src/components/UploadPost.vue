@@ -64,5 +64,18 @@ export default{
 </script>
 
 <style scoped>
+::placeholder{
+  color:rgb(182, 114, 228);
+  font-size: 0.8em;
+  text-align: center;
+}
+Button{
+  margin-top: 50px;
+  font-size: 20px;
+  color:rgb(88, 73, 173);
+  background-color: rgb(234, 255, 245);
+  display: inline-block;
+  border-radius: 1.4vh;
+}
 
 </style>

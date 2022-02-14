@@ -63,5 +63,10 @@ export default {
   background-size: cover;
 
 }
+::placeholder{
+  color:rgb(69, 202, 171);
+  font-size: 0.8em;
+  text-align: center;
+}
 
 </style>
