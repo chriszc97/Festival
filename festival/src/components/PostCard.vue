@@ -75,18 +75,17 @@ h2{
 img{
   max-width: 400px;
   max-height: 480px;
-  /* margin: auto; */
-  /* border-bottom: 1px solid rgba(255, 255, 255, 0.2); */
-  padding:  0;
 }
 .container{
   text-align: center;
-  display: flex;
+  /* display: grid; */
   column-gap: 30px;
   gap: 20px 20px
 }
 .post{
   column-gap: 30px;
+  text-align: center;
+  align-content: center;
 }
 
 
