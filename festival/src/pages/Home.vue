@@ -50,7 +50,6 @@ export default {
       const result = await axios.get(`${BASE_URL}/user`)
       this.user = result.data
     }
-
   }
 
 }

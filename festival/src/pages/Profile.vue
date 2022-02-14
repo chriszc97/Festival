@@ -1,5 +1,6 @@
 <template>
 <div>
+  <Nav />
   <h1>Welcome Home {{user[0].firstName}}</h1>
   <HomePost :post='post' :key='post.id' v-for='post in posts'/>  
   </div> 
@@ -9,12 +10,14 @@
 import  axios from 'axios'
 const BASE_URL = 'http://localhost:3001/api'
 import HomePost from '../components/HomePost.vue'
+import Nav from '../components/Nav.vue'
 
 
 export default{
   name: 'Profile',
   components: {
-    HomePost
+    HomePost,
+    Nav
     
   },
   data: ()=> ({
@@ -41,3 +44,12 @@ export default{
   }
 }
 </script>
+<style scoped>
+
+div{
+  justify-content: center;
+  align-content: center;
+  /* display: grid; */
+  
+}
+</style>
