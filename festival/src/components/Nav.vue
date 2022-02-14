@@ -1,7 +1,7 @@
 <template>
   <nav class='nav'>
-    <router-link class='link' to='/profile'>Home</router-link>
-    <router-link class='link' to='/home'>Profile</router-link>
+    <router-link class='link' to='/home'>Home</router-link>
+    <router-link class='link' to='/profile'>Profile</router-link>
     <router-link class='link' to='/login'>Log Out</router-link>
   </nav>
 </template>
