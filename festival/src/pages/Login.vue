@@ -52,21 +52,25 @@ export default {
       this.theUser = res.data
 
       this.$router.push(`/profile`)
-
-
-
-
-      //call a get user by id and have userId in params
-      //that way in profile i can get user by id to that param
-
-      // need a way to gett all users and compare the 
-      //name/password to enter in home, add another users obj
-      // to render all users, then have user obj map through each 
-      // obj in users to see with ones match 
-
-
     }
   }
 
 }
 </script>
+
+<style scoped>
+div{
+  background-color:aqua
+  /* background-image: url('https://i.imgur.com/EthuMHq.jpg');
+background-position: center bottom;
+background-repeat: no-repeat;
+background-size: 100vh; */
+
+}
+img{
+background-position: center bottom;
+background-repeat: no-repeat;
+background-size: cover; 
+}
+
+</style>

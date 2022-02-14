@@ -23,13 +23,12 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2e5780;
-  /* margin-top: 60px; */
   justify-content: center;
   align-items: center;
-  background-image: url('https://i.imgur.com/EthuMHq.jpg');
+  /* background-image: url('https://i.imgur.com/EthuMHq.jpg');
   background-position: center bottom;
 background-repeat: no-repeat;
-background-size: cover;
+background-size: cover; */
 
 
 }
