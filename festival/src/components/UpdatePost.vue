@@ -62,7 +62,7 @@ export default{
 <style scoped>
 Button{
   margin-top: 50px;
-  font-size: 24px;
+  font-size: 16px;
   color:cornflowerblue;
   background-color: rgb(234, 255, 245);
   display: inline-block;

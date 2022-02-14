@@ -67,7 +67,7 @@ h2{
 .post{
   background-color: aquamarine;
   max-width: 400px;
-  max-height: 520px;
+  max-height: 540px;
   justify-content: center;
 
 }
@@ -88,6 +88,7 @@ Button{
   background-color: rgb(234, 255, 245);
   display: inline-block;
   border-radius: 1.4vh;
+  
 }
 Button:hover{
     background-color: transparent;
