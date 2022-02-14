@@ -68,6 +68,7 @@ h2{
   background-color: aquamarine;
   max-width: 400px;
   max-height: 480px;
+  justify-content: center;
 
 }
 
@@ -77,16 +78,14 @@ img{
   max-height: 480px;
 }
 .container{
-  text-align: center;
+  /* text-align: center; */
   /* display: grid; */
   column-gap: 30px;
-  gap: 20px 20px
+  gap: 20px 20px;
+  justify-self: center;
+  margin-left: 68vh
 }
-.post{
-  column-gap: 30px;
-  text-align: center;
-  align-content: center;
-}
+
 
 
 </style>
