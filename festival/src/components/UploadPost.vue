@@ -57,7 +57,9 @@ export default{
   async handleSubmit(e) {
       e.preventDefault();
       let post = this.post
-      await axios.post(`${BASE_URL}/post/`, post);
+      await axios.post(`${BASE_URL}/post/`, post)
+      this.$router.push(`/home`)
+
     }
   }
 }
