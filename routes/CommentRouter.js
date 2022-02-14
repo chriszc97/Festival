@@ -8,5 +8,6 @@ Router.post(
   middleware.verifyToken,
   controller.createComment
 );
+Router.get('/:id', controller.getComment);
 
 module.exports = Router;
