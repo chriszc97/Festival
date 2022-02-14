@@ -23,7 +23,7 @@ export default{
   }
   .link{
     color:rgb(83, 27, 83);
-    border: 1px solid rebeccapurple;
+    border: 2px solid rebeccapurple;
     text-decoration: none;
     
   }

@@ -81,7 +81,7 @@ img{
   column-gap: 30px;
   gap: 20px 20px;
   justify-self: center;
-  margin-left: 68vh
+  margin-left: 75vh
 }
 Button{
   color:cornflowerblue;
