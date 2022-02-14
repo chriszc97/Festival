@@ -1,6 +1,6 @@
 <template>
   <div> 
-    <h1> PLease login </h1>
+    <h1> Please login </h1>
     <form @submit="onSubmit">
       <label>Email</label>
         <input
@@ -10,6 +10,7 @@
         placeholder='email'
         @input='handleChange'
         />
+        <br />
       <label>Password</label>
         <input 
         type='text'
@@ -18,6 +19,7 @@
         placeholder="password"
         @input='handleChange'
         />
+        <br />
         <Button>Log In </Button>
     </form>
 
@@ -50,7 +52,6 @@ export default {
       let logger = this.user
       const res = await axios.post(`${BASE_URL}/auth/login`,logger)
       this.theUser = res.data
-
       this.$router.push(`/profile`)
     }
   }
@@ -60,17 +61,16 @@ export default {
 
 <style scoped>
 div{
-  background-color:aqua
-  /* background-image: url('https://i.imgur.com/EthuMHq.jpg');
-background-position: center bottom;
-background-repeat: no-repeat;
-background-size: 100vh; */
+  background-color:aqua;
+  margin-bottom: 0;
 
 }
-img{
-background-position: center bottom;
-background-repeat: no-repeat;
-background-size: cover; 
+label{
+  font-size: 30px;
+  padding: 20px;
+  
+  
 }
+
 
 </style>
