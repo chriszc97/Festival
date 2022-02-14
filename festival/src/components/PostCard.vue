@@ -69,7 +69,7 @@ h2{
 .post{
   background-color: aquamarine;
   max-width: 400px;
-  max-height: 540px;
+  max-height: 560px;
   justify-content: center;
 
 }

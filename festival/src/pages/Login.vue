@@ -13,7 +13,7 @@
         <br />
       <label>Password</label>
         <input 
-        type='text'
+        type='password'
         name='password'
         :value="password"
         placeholder="password"
@@ -64,6 +64,7 @@ div{
   background-color:aqua;
   margin-bottom: 0;
   border-bottom: 100px;
+  margin-top: 160px
 
 }
 label{
@@ -73,5 +74,7 @@ label{
 button{
   font-size: 20px
 }
+
+
 
 </style>
