@@ -5,7 +5,7 @@
       <p>{{post.content}} </p>
       <img :src='post.img' alt="" />
       <h4>Likes: {{post.likes}}</h4>
-      <h4 >Comments: {{post.Comments[0].body}}</h4>
+      <!-- <h4 >Comments: {{post.Comments[0].body}}</h4> -->
     </div>
   </div>
 </template>

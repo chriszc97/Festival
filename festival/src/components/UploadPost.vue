@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3> Upload a post </h3>
+    <h3> Upload a Post </h3>
     <form @submit="handleSubmit">
       <label>title</label>
       <input 
@@ -80,6 +80,10 @@ Button{
 Button:hover{
     background-color: transparent;
     box-shadow: none;
+}
+h3{
+  font-size: 28px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 </style>
