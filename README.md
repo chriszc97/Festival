@@ -20,6 +20,8 @@ Users will need to register an account and in their profiles they are able to po
 ##### A Trello board was used to keep track of the development progress and can be viewed [here.](https://trello.com/b/FK3A3yi5/festival)
 ### ***Screenshots***
 ##### Electric Festival
+![Smile](https://i.imgur.com/pad0K1W.jpg)
+![Smile](https://i.imgur.com/rkVHKjR.png)
 
 
 ### ***Future Updates***
