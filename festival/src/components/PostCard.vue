@@ -83,7 +83,7 @@ img{
   justify-self: center;
   margin-left: 68vh
 }
-button{
+Button{
   
   /* font-size: 17px; */
   color:cornflowerblue;
@@ -91,9 +91,10 @@ button{
   display: inline-block;
   border-radius: 1.4vh;
 }
-
-
-
+Button:hover{
+    background-color: transparent;
+    box-shadow: none;
+}
 </style>
 
 

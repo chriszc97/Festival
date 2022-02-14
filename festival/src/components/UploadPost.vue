@@ -77,5 +77,9 @@ Button{
   display: inline-block;
   border-radius: 1.4vh;
 }
+Button:hover{
+    background-color: transparent;
+    box-shadow: none;
+}
 
 </style>
