@@ -36,4 +36,5 @@ Users will need to register an account and in their profiles they are able to po
 
 ***
 ### ***Description***
+##### A simple blog app for EDM lovers. The festival app brings people together with a common intrest in music and they can share thier experiences by uploading pictures and posts. 
 

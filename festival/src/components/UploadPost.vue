@@ -26,7 +26,7 @@
           placeholder="img"
           @input="handleChange"
         />
-        <Button> Upload</Button>
+        <Button>Upload</Button>
     </form>
 
   </div>
