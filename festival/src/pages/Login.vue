@@ -36,9 +36,11 @@ export default {
     user: {
       email: '',
       password: ''
-    },
-    theUser: {}
+    }
   }),
+  props: {
+    theUser: Object
+  },
   methods: {
     handleChange(e){
       this.user[e.target.name] = e.target.value;
@@ -48,7 +50,11 @@ export default {
       let logger = this.user
       const res = await axios.post(`${BASE_URL}/auth/login`,logger)
       this.theUser = res.data
-      this.$router.push(`/home`)
+
+      this.$router.push(`/profile`)
+
+
+
 
       //call a get user by id and have userId in params
       //that way in profile i can get user by id to that param

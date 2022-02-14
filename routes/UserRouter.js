@@ -3,7 +3,7 @@ const controller = require('../controllers/UserController');
 const middleware = require('../middleware');
 
 Router.post(
-  './',
+  '/',
   middleware.stripToken,
   middleware.verifyToken,
   controller.createUser
@@ -27,4 +27,6 @@ Router.get(
   middleware.verifyToken,
   controller.getUserPost
 );
+Router.get('/', controller.getUser);
+
 module.exports = Router;

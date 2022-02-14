@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <div class="post" >   
       <h2>{{post.title}} </h2> 
       <p>{{post.content}} </p>
@@ -66,18 +66,21 @@ h2{
 }
 .post{
   background-color: aquamarine;
-    max-width: 400px;
+  max-width: 400px;
   max-height: 480px;
 
 }
 
 
 img{
-  /* max-width: 400px;
-  max-height: 480px; */
-  margin: auto;
+  max-width: 400px;
+  max-height: 480px;
+  /* margin: auto; */
   /* border-bottom: 1px solid rgba(255, 255, 255, 0.2); */
   padding:  0;
+}
+.container{
+  text-align: center;
 }
 
 </style>

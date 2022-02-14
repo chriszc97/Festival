@@ -1,6 +1,9 @@
 <template>
   <div>
-    <h1>Home Page</h1>
+    <h1>First name: {{user[0].firstName}}</h1>
+    <h1>Last name: {{user[0].lastName}}</h1>
+    <h1>Email: {{user[0].email}}</h1>
+
     <UploadPost />
     <PostCard :post='post' :key='post.id' v-for='post in posts' @deletePost="deletePost" @handleSubmit='handleSubmit' />
 
@@ -20,10 +23,12 @@ export default {
     UploadPost
   },
   data:() =>({
-    posts:{}
+    posts:{},
+    user:{}
   }),
   mounted(){
-    this.getPosts()
+    this.getPosts(),
+    this.getUser()
 
   },
   methods:{
@@ -39,6 +44,11 @@ export default {
       let post = this.post
       await axios.put(`${BASE_URL}/post/${id}`, post)
     },
+     async getUser(){
+      const result = await axios.get(`${BASE_URL}/user`)
+      this.user = result.data
+    }
+
   }
 
 }

@@ -1,17 +1,16 @@
 <template>
   <div id="app">
-  <Nav />
-  <router-view> </router-view>
+    
+ <Router-view :theUser=theUser> </Router-view>
   </div>
 </template>
 
 <script>
-import Nav from './components/Nav.vue'
 
 export default {
   name: 'App',
   components: {
-    Nav
+    
     
   }
 }

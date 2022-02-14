@@ -57,9 +57,19 @@ const getUserPost = async (req, res) => {
     throw error;
   }
 };
+
+const getUser = async (req, res) => {
+  try {
+    const user = await User.findAll();
+    res.send(user);
+  } catch (error) {
+    throw error;
+  }
+};
 module.exports = {
   createUser,
   updateUser,
   deleteUser,
-  getUserPost
+  getUserPost,
+  getUser
 };
